@@ -1,5 +1,5 @@
 import * as React from 'react'
-import PageFeatures from './MainPageTopRow'
+import PageFeatures from './PageFeatures'
 import ClubNews from './ClubNews'
 import PageAccordian from './PageAccordian'
 import ContactForm from './ContactForm'
