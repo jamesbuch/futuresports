@@ -17,7 +17,7 @@ header {
 	margin-top: 3.5rem;
 	min-width: 100vw;
 	min-height: 250px;
-	background-image: url(img/soccer.png);
+	background-image: url(/img/soccer.png);
 	box-shadow: 0px 1px 2px black;
 	margin-bottom: 3rem;
 }
