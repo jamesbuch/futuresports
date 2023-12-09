@@ -4,6 +4,7 @@ import ClubNews from './ClubNews'
 import PageAccordian from './PageAccordian'
 import ContactForm from './ContactForm'
 import ClubStatsTable from './ClubStatsTable'
+import WeatherWidget from './WeatherWidget'
 
 const MainPageContainer = (props) => {
 	
@@ -14,6 +15,11 @@ const MainPageContainer = (props) => {
         <div className="row">
 				<ContactForm />
 				<ClubStatsTable />
+        </div>
+		</div>
+		<div className="container">
+        <div className="row">
+				<WeatherWidget />
         </div>
 		</div>
 		<ClubNews />
