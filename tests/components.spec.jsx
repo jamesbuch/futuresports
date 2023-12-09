@@ -3,6 +3,7 @@ import { describe, it, expect } from 'vitest'
 
 import ContactForm from '../src/ContactForm'
 import userEvent from '@testing-library/user-event'
+import WeatherWidget from '../src/WeatherWidget'
 
 describe('Components Test', async () => {
   
@@ -15,7 +16,12 @@ describe('Components Test', async () => {
     expect(screen.getByRole('button')).toBeInTheDocument()
   })
 
-  it.concurrent('contact form is usable', async () => {
+ it.concurrent('weather widget displays data', async () => {
+	render(<WeatherWidget />)
+	// expect(screen.getByText('Weather')).toBeInTheDocument()
+ })
+
+ it.concurrent('contact form is usable', async () => {
 	render(<ContactForm />)
 	const nameInput = screen.getByRole('textbox', { name: 'Name' })
 	const emailInput = screen.getByRole('textbox', { name: 'Email address', })
@@ -25,7 +31,7 @@ describe('Components Test', async () => {
 	await userEvent.type(emailInput, 'james@example.com')
 	await userEvent.type(messageInput, 'Test message')
 	await userEvent.click(btn)
-	expect(screen.getByText('Thank you for sending an enquiry, James'))
+	expect(screen.getByText('Thank you for sending an enquiry, James')).toBeInTheDocument()
  })
 
 })

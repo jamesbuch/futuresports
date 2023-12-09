@@ -12,11 +12,12 @@ const MainPageTopRow = (props) => {
               Video not playing? This is an issue with YouTube itself; please
               open in new window.
             </div>
+            <div className='d-flex align-items-center justify-content-center mb-3'>
             <iframe
-					className="embeddedVideo"
-					style={{ marginRight: '1rem' }}
-					src="https://www.youtube.com/embed/5uHC420UdD4"
+              className="embeddedVideo"
+              src="https://www.youtube.com/embed/5uHC420UdD4"
             ></iframe>
+            </div>
           </div>
           <div className="col-lg-8 col-md-12 col-sm-12 col-xs-12">
             <div id="carouselExampleIndicators" className="carousel slide">

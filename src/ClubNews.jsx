@@ -1,12 +1,17 @@
 import * as React from 'react'
+import WeatherWidget from './WeatherWidget'
 
 const ClubNews = (props) => {
 
 	return (
-		<div className="container">
+		<div className="container ">
         <div className="row">
-          <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12"></div>
-          <div className="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+          <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div className='d-flex align-items-center justify-content-center'>
+            <WeatherWidget />
+            </div>
+          </div>
+          <div className="col-lg-8 col-md-12 col-sm-12 col-xs-12 mt-2">
             <a name="news"></a>
             <h1>Club News</h1>
             <h3>Tigers team</h3>
