@@ -1,23 +1,21 @@
 import * as React from 'react'
-import MainPageTopRow from './MainPageTopRow'
+import PageFeatures from './PageFeatures'
 import ClubNews from './ClubNews'
 import PageAccordian from './PageAccordian'
 import ContactForm from './ContactForm'
 import ClubStatsTable from './ClubStatsTable'
-import WeatherWidget from './WeatherWidget'
 
 const MainPageContainer = (props) => {
-
   return (
     <main>
-		<MainPageTopRow />
+      <PageFeatures />
       <div className="container">
         <div className="row">
-				<ContactForm />
-				<ClubStatsTable />
+          <ContactForm />
+          <ClubStatsTable />
         </div>
-		</div>
-		<ClubNews />
+      </div>
+      <ClubNews />
       <PageAccordian />
     </main>
   )

@@ -85,7 +85,7 @@ const WeatherWidget = (WrappedComponent) => {
 
     React.useEffect(() => {
       fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=${key}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&APPID=${key}`
       )
         .then((res) => res.json())
         .then((data) => setWeatherData(data))
