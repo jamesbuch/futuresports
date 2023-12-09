@@ -3,7 +3,7 @@ import { describe, it, expect } from 'vitest'
 
 import App from '../src/App'
 
-describe('App', () => {
+describe('App Tests', () => {
   
   it.concurrent('renders', () => {
     render(<App />)
