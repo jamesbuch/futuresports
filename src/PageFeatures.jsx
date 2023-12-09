@@ -2,7 +2,7 @@ import * as React from 'react'
 import EmbeddedVideo from './EmbeddedVideo'
 import ImageCarousel from './ImageCarousel'
 
-const MainPageTopRow = (props) => {
+const PageFeatures = (props) => {
   return (
     <div className="container">
       <div className="row">
@@ -13,4 +13,5 @@ const MainPageTopRow = (props) => {
   )
 }
 
-export default MainPageTopRow
+export default PageFeatures
+
