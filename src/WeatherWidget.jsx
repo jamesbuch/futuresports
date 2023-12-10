@@ -55,8 +55,6 @@ const WeatherWidget = (WrappedComponent) => {
     const key = import.meta.env.VITE_OPENWEATHERMAP_API_KEY
     const [city, setCity] = React.useState('Tamworth')
     const [country, setCountry] = React.useState('AU')
-    const [weatherIcon, setWeatherIcon] = React.useState('')
-
     const [weatherData, setWeatherData] = React.useState([])
 
     const handleChange = (e) => {
@@ -79,7 +77,6 @@ const WeatherWidget = (WrappedComponent) => {
         .then((res) => res.json())
         .then((data) => {
           setWeatherData(data)
-          console.log(JSON.stringify(data, null, 2))
         })
     }
 
